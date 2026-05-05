@@ -1,0 +1,36 @@
+
+
+.contact__main-form {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contact__title {
+  font-family: "Inter";
+}
+
+.contact__text {
+  font-family: "Inter";
+}
+
+.contact__form-input-tel-text{
+  font-family: "Inter";
+}
+
+
+
+.contact__form-input {
+  font-family: "Inter";
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.contact__form-input-error-text {
+  font-family: "Inter";
+}
+
+.contact__button {
+  font-family: "Inter";
+}
+
+.contact__contact-text{
+  font-family: "Darker Grotesque";
+}
