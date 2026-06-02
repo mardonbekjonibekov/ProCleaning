@@ -7,7 +7,7 @@ const TestimonialCarousel = () => {
       id: 1,
       name: "Robert Fox",
       role: "Business Man",
-      image: { src: Image5, alt: "Robert Fox" }, 
+      image: { src: Image5, alt: "Robert Fox" },
       text: "Excellent service! The team was punctual, thorough, and left my home sparkling clean. Highly recommend for anyone needing a reliable and detailed cleaning service.",
     },
     {
@@ -41,27 +41,28 @@ const TestimonialCarousel = () => {
   return (
     <section id="stats" className="w-full py-20 bg-[#FDFEFF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
-         <div className="w-full lg:w-2/5 space-y-6">
+        <div className="w-full lg:w-2/5 space-y-6">
           <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight">
             Feedback About Their <br /> Experience With Us
           </h2>
           <p className="text-slate-500 text-lg leading-relaxed">
-            Read testimonials from our satisfied clients. See how our cleaning services 
+            Read testimonials from our satisfied clients. See how our cleaning services
             have made a difference in their lives and homes.
           </p>
-          
+
           <div className="flex gap-4 pt-4">
-            <button 
+            <button
               onClick={prevSlide}
-              className="w-12 h-12 rounded-xl border-2 border-slate-200 flex items-center justify-center text-green-500 hover:border-green-500 transition-all active:scale-95"
+              className="w-12 h-12 rounded-xl border-2 border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-green-500 hover:border-green-500 transition-all active:scale-95"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
               </svg>
             </button>
-            <button 
-              onClick={nextSlide}
-              className="w-12 h-12 rounded-xl bg-[#22C55E] flex items-center justify-center text-white hover:bg-[#1da850] transition-all active:scale-95"
+  
+            <button
+              onClick={prevSlide}
+              className="w-12 h-12 rounded-xl border-2 border-slate-200 flex items-center justify-center text-slate-500 hover:text-white hover:bg-green-500 hover:border-green-500 transition-all active:scale-95"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -70,27 +71,27 @@ const TestimonialCarousel = () => {
           </div>
         </div>
 
-       
+
         <div className="w-full lg:w-3/5">
           <div className="relative p-2 border-[6px] border-[#22C55E] rounded-[40px]">
             <div className="bg-white rounded-[32px] p-8 md:p-10 shadow-sm flex flex-col md:flex-row items-center md:items-start gap-8">
-              
-              
+
+
               <div className="w-48 h-56 shrink-0 rounded-2xl overflow-hidden shadow-md">
-                <img 
-                  src={current.image.src} 
-                  alt={current.image.alt} 
+                <img
+                  src={current.image.src}
+                  alt={current.image.alt}
                   className="w-full h-full object-cover"
                 />
               </div>
 
-             
+
               <div className="flex-1 space-y-4">
                 <div className="flex justify-between items-start">
                   <div>
                     <h3 className="text-2xl font-black text-slate-900">{current.name}</h3>
                     <p className="text-slate-500 font-medium">{current.role}</p>
-                    
+
                     <div className="flex text-orange-400 mt-2">
                       {[...Array(5)].map((_, i) => (
                         <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
